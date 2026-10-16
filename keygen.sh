@@ -48,4 +48,4 @@ elif command -v xclip >/dev/null; then
 else
   echo "Public key:"; cat "$key.pub"; exit 0
 fi
-echo "Public key is in the clipboard. If not, copy the output above"
+echo "Public key is in the clipboard. If not, copy the fingerprint above"

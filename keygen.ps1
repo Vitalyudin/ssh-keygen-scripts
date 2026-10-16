@@ -41,4 +41,4 @@ $block = "`nHost $HostName`n    User $User`n    IdentityFile ~/.ssh/$Name`n    I
 [IO.File]::AppendAllText($config, $block, (New-Object Text.UTF8Encoding $false))
 
 Get-Content "$key.pub" | Set-Clipboard
-Write-Host "Public key is in the clipboard. If not, copy the output above"
+Write-Host "Public key is in the clipboard. If not, copy the fingerprint above"
